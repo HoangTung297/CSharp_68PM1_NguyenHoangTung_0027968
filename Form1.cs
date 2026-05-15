@@ -20,12 +20,12 @@ namespace CSharp_68PM1_NguyenHoangTung_0027968
 
             if (username == STUDENT_EMAIL && password == STUDENT_MSSV)
             {
-                MessageBox.Show(
-                    "Đăng nhập thành công! Chào mừng bạn.",
-                    "Thông báo",
-                    MessageBoxButtons.OK,
-                    MessageBoxIcon.Information
-                );
+                MessageBox.Show("Đăng nhập thành công!", "Thông báo",
+                MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+                QLSinhVien formQL = new QLSinhVien(); 
+                formQL.Show();
+                this.Hide();
             }
             else
             {
