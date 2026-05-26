@@ -2,15 +2,8 @@
 {
     partial class UC_QLLH
     {
-        /// <summary> 
-        /// Required designer variable.
-        /// </summary>
         private System.ComponentModel.IContainer components = null;
 
-        /// <summary> 
-        /// Clean up any resources being used.
-        /// </summary>
-        /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
         protected override void Dispose(bool disposing)
         {
             if (disposing && (components != null))
@@ -22,379 +15,383 @@
 
         #region Component Designer generated code
 
-        /// <summary> 
-        /// Required method for Designer support - do not modify 
-        /// the contents of this method with the code editor.
-        /// </summary>
         private void InitializeComponent()
         {
-            this.dgvSinhVien = new System.Windows.Forms.DataGridView();
-            this.btnTim = new System.Windows.Forms.Button();
-            this.txtTimKiem = new System.Windows.Forms.TextBox();
-            this.label6 = new System.Windows.Forms.Label();
-            this.btnXoa = new System.Windows.Forms.Button();
-            this.btnThem = new System.Windows.Forms.Button();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.label3 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.txtMaSV = new System.Windows.Forms.TextBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.txtHoTen = new System.Windows.Forms.TextBox();
-            this.label5 = new System.Windows.Forms.Label();
-            this.cboLop = new System.Windows.Forms.ComboBox();
-            this.btnLamMoi = new System.Windows.Forms.Button();
-            this.btnSua = new System.Windows.Forms.Button();
-            this.btnFirst = new System.Windows.Forms.Button();
-            this.btnPrev = new System.Windows.Forms.Button();
-            this.lblPhanTrang = new System.Windows.Forms.Label();
-            this.btnNext = new System.Windows.Forms.Button();
-            this.btnLast = new System.Windows.Forms.Button();
-            this.panelPhanTrang = new System.Windows.Forms.Panel();
-            this.button1 = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvSinhVien)).BeginInit();
-            this.groupBox1.SuspendLayout();
-            this.panelPhanTrang.SuspendLayout();
-            this.SuspendLayout();
+            panelLeft = new Panel();
+            lblThongTin = new Label();
+            lblMaID = new Label();
+            txtMaID = new TextBox();
+            lblMaLop = new Label();
+            txtMaLop = new TextBox();
+            lblTenLop = new Label();
+            txtTenLop = new TextBox();
+            lblGhiChu = new Label();
+            txtGhiChu = new TextBox();
+            btnThem = new Button();
+            btnSua = new Button();
+            btnXoa = new Button();
+            btnLamMoi = new Button();
+            btnXemDS = new Button();
+            panelRight = new Panel();
+            lblTimKiem = new Label();
+            txtTimKiem = new TextBox();
+            btnTim = new Button();
+            dgvLopHoc = new DataGridView();
+            btnDauTrang = new Button();
+            btnTrangTruoc = new Button();
+            lblTrang = new Label();
+            btnTrangSau = new Button();
+            btnCuoiTrang = new Button();
+            panelLeft.SuspendLayout();
+            panelRight.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)dgvLopHoc).BeginInit();
+            SuspendLayout();
             // 
-            // dgvSinhVien
+            // panelLeft
             // 
-            this.dgvSinhVien.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.dgvSinhVien.BackgroundColor = System.Drawing.Color.White;
-            this.dgvSinhVien.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvSinhVien.Location = new System.Drawing.Point(542, 134);
-            this.dgvSinhVien.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.dgvSinhVien.Name = "dgvSinhVien";
-            this.dgvSinhVien.RowHeadersWidth = 51;
-            this.dgvSinhVien.RowTemplate.Height = 24;
-            this.dgvSinhVien.Size = new System.Drawing.Size(889, 581);
-            this.dgvSinhVien.TabIndex = 39;
+            panelLeft.BackColor = Color.FromArgb(236, 240, 241);
+            panelLeft.Controls.Add(lblThongTin);
+            panelLeft.Controls.Add(lblMaID);
+            panelLeft.Controls.Add(txtMaID);
+            panelLeft.Controls.Add(lblMaLop);
+            panelLeft.Controls.Add(txtMaLop);
+            panelLeft.Controls.Add(lblTenLop);
+            panelLeft.Controls.Add(txtTenLop);
+            panelLeft.Controls.Add(lblGhiChu);
+            panelLeft.Controls.Add(txtGhiChu);
+            panelLeft.Controls.Add(btnThem);
+            panelLeft.Controls.Add(btnSua);
+            panelLeft.Controls.Add(btnXoa);
+            panelLeft.Controls.Add(btnLamMoi);
+            panelLeft.Controls.Add(btnXemDS);
+            panelLeft.Dock = DockStyle.Left;
+            panelLeft.Location = new Point(0, 0);
+            panelLeft.Name = "panelLeft";
+            panelLeft.Size = new Size(394, 818);
+            panelLeft.TabIndex = 0;
             // 
-            // btnTim
+            // lblThongTin
             // 
-            this.btnTim.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(62)))), ((int)(((byte)(80)))));
-            this.btnTim.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnTim.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold);
-            this.btnTim.ForeColor = System.Drawing.Color.White;
-            this.btnTim.Location = new System.Drawing.Point(964, 60);
-            this.btnTim.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.btnTim.Name = "btnTim";
-            this.btnTim.Size = new System.Drawing.Size(124, 45);
-            this.btnTim.TabIndex = 38;
-            this.btnTim.Text = "Tìm";
-            this.btnTim.UseVisualStyleBackColor = false;
+            lblThongTin.AutoSize = true;
+            lblThongTin.Font = new Font("Segoe UI", 13.8F, FontStyle.Bold);
+            lblThongTin.ForeColor = Color.FromArgb(44, 62, 80);
+            lblThongTin.Location = new Point(25, 30);
+            lblThongTin.Name = "lblThongTin";
+            lblThongTin.Size = new Size(262, 31);
+            lblThongTin.TabIndex = 0;
+            lblThongTin.Text = "THÔNG TIN LỚP HỌC";
             // 
-            // txtTimKiem
+            // lblMaID
             // 
-            this.txtTimKiem.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F);
-            this.txtTimKiem.Location = new System.Drawing.Point(542, 65);
-            this.txtTimKiem.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.txtTimKiem.Name = "txtTimKiem";
-            this.txtTimKiem.Size = new System.Drawing.Size(404, 32);
-            this.txtTimKiem.TabIndex = 37;
+            lblMaID.AutoSize = true;
+            lblMaID.Font = new Font("Segoe UI", 10F, FontStyle.Bold);
+            lblMaID.Location = new Point(25, 90);
+            lblMaID.Name = "lblMaID";
+            lblMaID.Size = new Size(61, 23);
+            lblMaID.TabIndex = 1;
+            lblMaID.Text = "Mã ID:";
             // 
-            // label6
+            // txtMaID
             // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold);
-            this.label6.Location = new System.Drawing.Point(537, 28);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(361, 25);
-            this.label6.TabIndex = 36;
-            this.label6.Text = "Tìm kiếm (Mã ID / Mã lớp / Tên lớp):";
-            this.label6.Click += new System.EventHandler(this.label6_Click);
+            txtMaID.Font = new Font("Segoe UI", 10.8F);
+            txtMaID.Location = new Point(25, 120);
+            txtMaID.Name = "txtMaID";
+            txtMaID.Size = new Size(340, 31);
+            txtMaID.TabIndex = 2;
             // 
-            // btnXoa
+            // lblMaLop
             // 
-            this.btnXoa.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(76)))), ((int)(((byte)(60)))));
-            this.btnXoa.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnXoa.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold);
-            this.btnXoa.ForeColor = System.Drawing.Color.White;
-            this.btnXoa.Location = new System.Drawing.Point(36, 604);
-            this.btnXoa.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.btnXoa.Name = "btnXoa";
-            this.btnXoa.Size = new System.Drawing.Size(214, 62);
-            this.btnXoa.TabIndex = 34;
-            this.btnXoa.Text = "Xóa";
-            this.btnXoa.UseVisualStyleBackColor = false;
+            lblMaLop.AutoSize = true;
+            lblMaLop.Font = new Font("Segoe UI", 10F, FontStyle.Bold);
+            lblMaLop.Location = new Point(25, 170);
+            lblMaLop.Name = "lblMaLop";
+            lblMaLop.Size = new Size(71, 23);
+            lblMaLop.TabIndex = 3;
+            lblMaLop.Text = "Mã lớp:";
+            // 
+            // txtMaLop
+            // 
+            txtMaLop.Font = new Font("Segoe UI", 10.8F);
+            txtMaLop.Location = new Point(25, 200);
+            txtMaLop.Name = "txtMaLop";
+            txtMaLop.Size = new Size(340, 31);
+            txtMaLop.TabIndex = 4;
+            // 
+            // lblTenLop
+            // 
+            lblTenLop.AutoSize = true;
+            lblTenLop.Font = new Font("Segoe UI", 10F, FontStyle.Bold);
+            lblTenLop.Location = new Point(25, 250);
+            lblTenLop.Name = "lblTenLop";
+            lblTenLop.Size = new Size(73, 23);
+            lblTenLop.TabIndex = 5;
+            lblTenLop.Text = "Tên lớp:";
+            // 
+            // txtTenLop
+            // 
+            txtTenLop.Font = new Font("Segoe UI", 10.8F);
+            txtTenLop.Location = new Point(25, 280);
+            txtTenLop.Name = "txtTenLop";
+            txtTenLop.Size = new Size(340, 31);
+            txtTenLop.TabIndex = 6;
+            // 
+            // lblGhiChu
+            // 
+            lblGhiChu.AutoSize = true;
+            lblGhiChu.Font = new Font("Segoe UI", 10F, FontStyle.Bold);
+            lblGhiChu.Location = new Point(25, 330);
+            lblGhiChu.Name = "lblGhiChu";
+            lblGhiChu.Size = new Size(75, 23);
+            lblGhiChu.TabIndex = 7;
+            lblGhiChu.Text = "Ghi chú:";
+            // 
+            // txtGhiChu
+            // 
+            txtGhiChu.Font = new Font("Segoe UI", 10.8F);
+            txtGhiChu.Location = new Point(25, 360);
+            txtGhiChu.Name = "txtGhiChu";
+            txtGhiChu.Size = new Size(340, 31);
+            txtGhiChu.TabIndex = 8;
             // 
             // btnThem
             // 
-            this.btnThem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(152)))), ((int)(((byte)(219)))));
-            this.btnThem.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnThem.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold);
-            this.btnThem.ForeColor = System.Drawing.Color.White;
-            this.btnThem.Location = new System.Drawing.Point(36, 523);
-            this.btnThem.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.btnThem.Name = "btnThem";
-            this.btnThem.Size = new System.Drawing.Size(214, 62);
-            this.btnThem.TabIndex = 32;
-            this.btnThem.Text = "Thêm";
-            this.btnThem.UseVisualStyleBackColor = false;
-            // 
-            // groupBox1
-            // 
-            this.groupBox1.Controls.Add(this.label3);
-            this.groupBox1.Controls.Add(this.textBox1);
-            this.groupBox1.Controls.Add(this.label1);
-            this.groupBox1.Controls.Add(this.txtMaSV);
-            this.groupBox1.Controls.Add(this.label2);
-            this.groupBox1.Controls.Add(this.txtHoTen);
-            this.groupBox1.Controls.Add(this.label5);
-            this.groupBox1.Controls.Add(this.cboLop);
-            this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox1.Location = new System.Drawing.Point(36, 28);
-            this.groupBox1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Padding = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.groupBox1.Size = new System.Drawing.Size(443, 463);
-            this.groupBox1.TabIndex = 31;
-            this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Thông tin lớp học";
-            this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter);
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(18, 355);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(77, 22);
-            this.label3.TabIndex = 10;
-            this.label3.Text = "Ghi chú:";
-            // 
-            // textBox1
-            // 
-            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(21, 386);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(404, 30);
-            this.textBox1.TabIndex = 11;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(17, 44);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(61, 22);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Mã ID:";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
-            // 
-            // txtMaSV
-            // 
-            this.txtMaSV.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtMaSV.Location = new System.Drawing.Point(20, 75);
-            this.txtMaSV.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.txtMaSV.Name = "txtMaSV";
-            this.txtMaSV.Size = new System.Drawing.Size(404, 30);
-            this.txtMaSV.TabIndex = 1;
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(17, 144);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(68, 22);
-            this.label2.TabIndex = 2;
-            this.label2.Text = "Mã lớp:";
-            // 
-            // txtHoTen
-            // 
-            this.txtHoTen.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtHoTen.Location = new System.Drawing.Point(20, 175);
-            this.txtHoTen.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.txtHoTen.Name = "txtHoTen";
-            this.txtHoTen.Size = new System.Drawing.Size(404, 30);
-            this.txtHoTen.TabIndex = 3;
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(17, 250);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(76, 22);
-            this.label5.TabIndex = 8;
-            this.label5.Text = "Tên lớp:";
-            this.label5.Click += new System.EventHandler(this.label5_Click);
-            // 
-            // cboLop
-            // 
-            this.cboLop.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cboLop.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cboLop.FormattingEnabled = true;
-            this.cboLop.Location = new System.Drawing.Point(20, 276);
-            this.cboLop.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.cboLop.Name = "cboLop";
-            this.cboLop.Size = new System.Drawing.Size(404, 33);
-            this.cboLop.TabIndex = 9;
-            this.cboLop.SelectedIndexChanged += new System.EventHandler(this.cboLop_SelectedIndexChanged);
-            // 
-            // btnLamMoi
-            // 
-            this.btnLamMoi.BackColor = System.Drawing.Color.DarkGray;
-            this.btnLamMoi.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnLamMoi.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold);
-            this.btnLamMoi.ForeColor = System.Drawing.Color.White;
-            this.btnLamMoi.Location = new System.Drawing.Point(265, 604);
-            this.btnLamMoi.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.btnLamMoi.Name = "btnLamMoi";
-            this.btnLamMoi.Size = new System.Drawing.Size(214, 62);
-            this.btnLamMoi.TabIndex = 35;
-            this.btnLamMoi.Text = "Làm mới";
-            this.btnLamMoi.UseVisualStyleBackColor = false;
+            btnThem.BackColor = Color.FromArgb(52, 152, 219);
+            btnThem.FlatStyle = FlatStyle.Flat;
+            btnThem.Font = new Font("Segoe UI", 10F, FontStyle.Bold);
+            btnThem.ForeColor = Color.White;
+            btnThem.Location = new Point(25, 430);
+            btnThem.Name = "btnThem";
+            btnThem.Size = new Size(160, 45);
+            btnThem.TabIndex = 9;
+            btnThem.Text = "Thêm";
+            btnThem.UseVisualStyleBackColor = false;
+            btnThem.Click += btnThem_Click;
             // 
             // btnSua
             // 
-            this.btnSua.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(204)))), ((int)(((byte)(113)))));
-            this.btnSua.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnSua.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold);
-            this.btnSua.ForeColor = System.Drawing.Color.White;
-            this.btnSua.Location = new System.Drawing.Point(265, 523);
-            this.btnSua.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.btnSua.Name = "btnSua";
-            this.btnSua.Size = new System.Drawing.Size(214, 62);
-            this.btnSua.TabIndex = 33;
-            this.btnSua.Text = "Sửa";
-            this.btnSua.UseVisualStyleBackColor = false;
+            btnSua.BackColor = Color.FromArgb(46, 204, 113);
+            btnSua.FlatStyle = FlatStyle.Flat;
+            btnSua.Font = new Font("Segoe UI", 10F, FontStyle.Bold);
+            btnSua.ForeColor = Color.White;
+            btnSua.Location = new Point(205, 430);
+            btnSua.Name = "btnSua";
+            btnSua.Size = new Size(160, 45);
+            btnSua.TabIndex = 10;
+            btnSua.Text = "Sửa";
+            btnSua.UseVisualStyleBackColor = false;
+            btnSua.Click += btnSua_Click;
             // 
-            // btnFirst
+            // btnXoa
             // 
-            this.btnFirst.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold);
-            this.btnFirst.Location = new System.Drawing.Point(3, 4);
-            this.btnFirst.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.btnFirst.Name = "btnFirst";
-            this.btnFirst.Size = new System.Drawing.Size(68, 52);
-            this.btnFirst.TabIndex = 0;
-            this.btnFirst.Text = "<<";
-            this.btnFirst.UseVisualStyleBackColor = true;
+            btnXoa.BackColor = Color.FromArgb(231, 76, 60);
+            btnXoa.FlatStyle = FlatStyle.Flat;
+            btnXoa.Font = new Font("Segoe UI", 10F, FontStyle.Bold);
+            btnXoa.ForeColor = Color.White;
+            btnXoa.Location = new Point(25, 490);
+            btnXoa.Name = "btnXoa";
+            btnXoa.Size = new Size(160, 45);
+            btnXoa.TabIndex = 11;
+            btnXoa.Text = "Xóa";
+            btnXoa.UseVisualStyleBackColor = false;
+            btnXoa.Click += btnXoa_Click;
             // 
-            // btnPrev
+            // btnLamMoi
             // 
-            this.btnPrev.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold);
-            this.btnPrev.Location = new System.Drawing.Point(78, 4);
-            this.btnPrev.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.btnPrev.Name = "btnPrev";
-            this.btnPrev.Size = new System.Drawing.Size(68, 52);
-            this.btnPrev.TabIndex = 1;
-            this.btnPrev.Text = "<";
-            this.btnPrev.UseVisualStyleBackColor = true;
+            btnLamMoi.BackColor = Color.FromArgb(149, 165, 166);
+            btnLamMoi.FlatStyle = FlatStyle.Flat;
+            btnLamMoi.Font = new Font("Segoe UI", 10F, FontStyle.Bold);
+            btnLamMoi.ForeColor = Color.White;
+            btnLamMoi.Location = new Point(205, 490);
+            btnLamMoi.Name = "btnLamMoi";
+            btnLamMoi.Size = new Size(160, 45);
+            btnLamMoi.TabIndex = 12;
+            btnLamMoi.Text = "Làm mới";
+            btnLamMoi.UseVisualStyleBackColor = false;
+            btnLamMoi.Click += btnLamMoi_Click;
             // 
-            // lblPhanTrang
+            // btnXemDS
             // 
-            this.lblPhanTrang.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.lblPhanTrang.Location = new System.Drawing.Point(152, 4);
-            this.lblPhanTrang.Name = "lblPhanTrang";
-            this.lblPhanTrang.Size = new System.Drawing.Size(585, 52);
-            this.lblPhanTrang.TabIndex = 2;
-            this.lblPhanTrang.Text = "Trang 1/1  |  3 bản ghi";
-            this.lblPhanTrang.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            btnXemDS.BackColor = Color.FromArgb(52, 73, 94);
+            btnXemDS.FlatStyle = FlatStyle.Flat;
+            btnXemDS.Font = new Font("Segoe UI", 10F, FontStyle.Bold);
+            btnXemDS.ForeColor = Color.White;
+            btnXemDS.Location = new Point(25, 555);
+            btnXemDS.Name = "btnXemDS";
+            btnXemDS.Size = new Size(340, 48);
+            btnXemDS.TabIndex = 13;
+            btnXemDS.Text = "Xem danh sách sinh viên";
+            btnXemDS.UseVisualStyleBackColor = false;
+            btnXemDS.Click += btnXemDS_Click;
             // 
-            // btnNext
+            // panelRight
             // 
-            this.btnNext.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold);
-            this.btnNext.Location = new System.Drawing.Point(744, 4);
-            this.btnNext.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.btnNext.Name = "btnNext";
-            this.btnNext.Size = new System.Drawing.Size(68, 52);
-            this.btnNext.TabIndex = 3;
-            this.btnNext.Text = ">";
-            this.btnNext.UseVisualStyleBackColor = true;
+            panelRight.BackColor = Color.White;
+            panelRight.Controls.Add(lblTimKiem);
+            panelRight.Controls.Add(txtTimKiem);
+            panelRight.Controls.Add(btnTim);
+            panelRight.Controls.Add(dgvLopHoc);
+            panelRight.Controls.Add(btnDauTrang);
+            panelRight.Controls.Add(btnTrangTruoc);
+            panelRight.Controls.Add(lblTrang);
+            panelRight.Controls.Add(btnTrangSau);
+            panelRight.Controls.Add(btnCuoiTrang);
+            panelRight.Dock = DockStyle.Fill;
+            panelRight.Location = new Point(394, 0);
+            panelRight.Name = "panelRight";
+            panelRight.Padding = new Padding(20);
+            panelRight.Size = new Size(910, 818);
+            panelRight.TabIndex = 1;
             // 
-            // btnLast
+            // lblTimKiem
             // 
-            this.btnLast.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold);
-            this.btnLast.Location = new System.Drawing.Point(818, 4);
-            this.btnLast.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.btnLast.Name = "btnLast";
-            this.btnLast.Size = new System.Drawing.Size(68, 52);
-            this.btnLast.TabIndex = 4;
-            this.btnLast.Text = ">>";
-            this.btnLast.UseVisualStyleBackColor = true;
+            lblTimKiem.AutoSize = true;
+            lblTimKiem.Font = new Font("Segoe UI", 10F, FontStyle.Bold);
+            lblTimKiem.Location = new Point(23, 30);
+            lblTimKiem.Name = "lblTimKiem";
+            lblTimKiem.Size = new Size(299, 23);
+            lblTimKiem.TabIndex = 0;
+            lblTimKiem.Text = "Tìm kiếm (Mã ID / Mã lớp / Tên lớp)";
             // 
-            // panelPhanTrang
+            // txtTimKiem
             // 
-            this.panelPhanTrang.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panelPhanTrang.Controls.Add(this.btnFirst);
-            this.panelPhanTrang.Controls.Add(this.btnPrev);
-            this.panelPhanTrang.Controls.Add(this.lblPhanTrang);
-            this.panelPhanTrang.Controls.Add(this.btnNext);
-            this.panelPhanTrang.Controls.Add(this.btnLast);
-            this.panelPhanTrang.Location = new System.Drawing.Point(542, 728);
-            this.panelPhanTrang.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.panelPhanTrang.Name = "panelPhanTrang";
-            this.panelPhanTrang.Size = new System.Drawing.Size(888, 62);
-            this.panelPhanTrang.TabIndex = 40;
+            txtTimKiem.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
+            txtTimKiem.Font = new Font("Segoe UI", 11F);
+            txtTimKiem.Location = new Point(23, 60);
+            txtTimKiem.Name = "txtTimKiem";
+            txtTimKiem.Size = new Size(734, 32);
+            txtTimKiem.TabIndex = 1;
             // 
-            // button1
+            // btnTim
             // 
-            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(62)))), ((int)(((byte)(80)))));
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold);
-            this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Location = new System.Drawing.Point(36, 689);
-            this.button1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(443, 45);
-            this.button1.TabIndex = 41;
-            this.button1.Text = "Xem danh sách sinh viên";
-            this.button1.UseVisualStyleBackColor = false;
+            btnTim.Anchor = AnchorStyles.Top | AnchorStyles.Right;
+            btnTim.BackColor = Color.FromArgb(44, 62, 80);
+            btnTim.FlatStyle = FlatStyle.Flat;
+            btnTim.Font = new Font("Segoe UI", 10F, FontStyle.Bold);
+            btnTim.ForeColor = Color.White;
+            btnTim.Location = new Point(773, 58);
+            btnTim.Name = "btnTim";
+            btnTim.Size = new Size(110, 35);
+            btnTim.TabIndex = 2;
+            btnTim.Text = "Tìm kiếm";
+            btnTim.UseVisualStyleBackColor = false;
+            btnTim.Click += btnTim_Click;
+            // 
+            // dgvLopHoc
+            // 
+            dgvLopHoc.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
+            dgvLopHoc.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
+            dgvLopHoc.BackgroundColor = Color.White;
+            dgvLopHoc.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dgvLopHoc.Location = new Point(23, 120);
+            dgvLopHoc.Name = "dgvLopHoc";
+            dgvLopHoc.RowHeadersWidth = 51;
+            dgvLopHoc.RowTemplate.Height = 24;
+            dgvLopHoc.Size = new Size(860, 598);
+            dgvLopHoc.TabIndex = 3;
+            // 
+            // btnDauTrang
+            // 
+            btnDauTrang.Anchor = AnchorStyles.Bottom | AnchorStyles.Left;
+            btnDauTrang.Font = new Font("Segoe UI", 9.5F, FontStyle.Bold);
+            btnDauTrang.Location = new Point(23, 743);
+            btnDauTrang.Name = "btnDauTrang";
+            btnDauTrang.Size = new Size(55, 40);
+            btnDauTrang.TabIndex = 4;
+            btnDauTrang.Text = "<<";
+            btnDauTrang.UseVisualStyleBackColor = true;
+            btnDauTrang.Click += btnFirst_Click;
+            // 
+            // btnTrangTruoc
+            // 
+            btnTrangTruoc.Anchor = AnchorStyles.Bottom | AnchorStyles.Left;
+            btnTrangTruoc.Font = new Font("Segoe UI", 9.5F, FontStyle.Bold);
+            btnTrangTruoc.Location = new Point(84, 743);
+            btnTrangTruoc.Name = "btnTrangTruoc";
+            btnTrangTruoc.Size = new Size(55, 40);
+            btnTrangTruoc.TabIndex = 5;
+            btnTrangTruoc.Text = "<";
+            btnTrangTruoc.UseVisualStyleBackColor = true;
+            btnTrangTruoc.Click += btnPrev_Click;
+            // 
+            // lblTrang
+            // 
+            lblTrang.Anchor = AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
+            lblTrang.Font = new Font("Segoe UI", 10F);
+            lblTrang.Location = new Point(145, 743);
+            lblTrang.Name = "lblTrang";
+            lblTrang.Size = new Size(602, 40);
+            lblTrang.TabIndex = 6;
+            lblTrang.Text = "Trang 1 / 1";
+            lblTrang.TextAlign = ContentAlignment.MiddleCenter;
+            // 
+            // btnTrangSau
+            // 
+            btnTrangSau.Anchor = AnchorStyles.Bottom | AnchorStyles.Right;
+            btnTrangSau.Font = new Font("Segoe UI", 9.5F, FontStyle.Bold);
+            btnTrangSau.Location = new Point(753, 743);
+            btnTrangSau.Name = "btnTrangSau";
+            btnTrangSau.Size = new Size(55, 40);
+            btnTrangSau.TabIndex = 7;
+            btnTrangSau.Text = ">";
+            btnTrangSau.UseVisualStyleBackColor = true;
+            btnTrangSau.Click += btnNext_Click;
+            // 
+            // btnCuoiTrang
+            // 
+            btnCuoiTrang.Anchor = AnchorStyles.Bottom | AnchorStyles.Right;
+            btnCuoiTrang.Font = new Font("Segoe UI", 9.5F, FontStyle.Bold);
+            btnCuoiTrang.Location = new Point(814, 743);
+            btnCuoiTrang.Name = "btnCuoiTrang";
+            btnCuoiTrang.Size = new Size(55, 40);
+            btnCuoiTrang.TabIndex = 8;
+            btnCuoiTrang.Text = ">>";
+            btnCuoiTrang.UseVisualStyleBackColor = true;
+            btnCuoiTrang.Click += btnLast_Click;
             // 
             // UC_QLLH
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.dgvSinhVien);
-            this.Controls.Add(this.btnTim);
-            this.Controls.Add(this.txtTimKiem);
-            this.Controls.Add(this.label6);
-            this.Controls.Add(this.btnXoa);
-            this.Controls.Add(this.btnThem);
-            this.Controls.Add(this.groupBox1);
-            this.Controls.Add(this.btnLamMoi);
-            this.Controls.Add(this.btnSua);
-            this.Controls.Add(this.panelPhanTrang);
-            this.Name = "UC_QLLH";
-            this.Size = new System.Drawing.Size(1467, 818);
-            ((System.ComponentModel.ISupportInitialize)(this.dgvSinhVien)).EndInit();
-            this.groupBox1.ResumeLayout(false);
-            this.groupBox1.PerformLayout();
-            this.panelPhanTrang.ResumeLayout(false);
-            this.ResumeLayout(false);
-            this.PerformLayout();
-
+            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleMode = AutoScaleMode.Font;
+            Controls.Add(panelRight);
+            Controls.Add(panelLeft);
+            Name = "UC_QLLH";
+            Size = new Size(1304, 818);
+            panelLeft.ResumeLayout(false);
+            panelLeft.PerformLayout();
+            panelRight.ResumeLayout(false);
+            panelRight.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)dgvLopHoc).EndInit();
+            ResumeLayout(false);
         }
 
         #endregion
 
-        private System.Windows.Forms.DataGridView dgvSinhVien;
-        private System.Windows.Forms.Button btnTim;
-        private System.Windows.Forms.TextBox txtTimKiem;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Button btnXoa;
+        private System.Windows.Forms.Panel panelLeft;
+        private System.Windows.Forms.Label lblThongTin;
+        private System.Windows.Forms.Label lblMaID;
+        private System.Windows.Forms.TextBox txtMaID;
+        private System.Windows.Forms.Label lblMaLop;
+        private System.Windows.Forms.TextBox txtMaLop;
+        private System.Windows.Forms.Label lblTenLop;
+        private System.Windows.Forms.TextBox txtTenLop;
+        private System.Windows.Forms.Label lblGhiChu;
+        private System.Windows.Forms.TextBox txtGhiChu;
         private System.Windows.Forms.Button btnThem;
-        private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox txtMaSV;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox txtHoTen;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.ComboBox cboLop;
-        private System.Windows.Forms.Button btnLamMoi;
         private System.Windows.Forms.Button btnSua;
-        private System.Windows.Forms.Button btnFirst;
-        private System.Windows.Forms.Button btnPrev;
-        private System.Windows.Forms.Label lblPhanTrang;
-        private System.Windows.Forms.Button btnNext;
-        private System.Windows.Forms.Button btnLast;
-        private System.Windows.Forms.Panel panelPhanTrang;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnXoa;
+        private System.Windows.Forms.Button btnLamMoi;
+        private System.Windows.Forms.Button btnXemDS;
+
+        private System.Windows.Forms.Panel panelRight;
+        private System.Windows.Forms.Label lblTimKiem;
+        private System.Windows.Forms.TextBox txtTimKiem;
+        private System.Windows.Forms.Button btnTim;
+        private System.Windows.Forms.DataGridView dgvLopHoc;
+
+        private System.Windows.Forms.Button btnDauTrang;
+        private System.Windows.Forms.Button btnTrangTruoc;
+        private System.Windows.Forms.Label lblTrang;
+        private System.Windows.Forms.Button btnTrangSau;
+        private System.Windows.Forms.Button btnCuoiTrang;
     }
 }
