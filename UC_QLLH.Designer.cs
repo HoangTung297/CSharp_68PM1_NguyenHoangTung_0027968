@@ -1,4 +1,4 @@
-﻿namespace WindowsFormsApp1
+﻿namespace CSharp_68PM1_NguyenHoangTung_0027968
 {
     partial class UC_QLLH
     {
@@ -6,10 +6,7 @@
 
         protected override void Dispose(bool disposing)
         {
-            if (disposing && (components != null))
-            {
-                components.Dispose();
-            }
+            if (disposing && (components != null)) components.Dispose();
             base.Dispose(disposing);
         }
 
@@ -17,351 +14,207 @@
 
         private void InitializeComponent()
         {
-            panelLeft = new Panel();
-            lblThongTin = new Label();
-            lblMaID = new Label();
-            txtMaID = new TextBox();
-            lblMaLop = new Label();
-            txtMaLop = new TextBox();
-            lblTenLop = new Label();
-            txtTenLop = new TextBox();
-            lblGhiChu = new Label();
-            txtGhiChu = new TextBox();
-            btnThem = new Button();
-            btnSua = new Button();
-            btnXoa = new Button();
-            btnLamMoi = new Button();
-            btnXemDS = new Button();
-            panelRight = new Panel();
-            lblTimKiem = new Label();
-            txtTimKiem = new TextBox();
-            btnTim = new Button();
-            dgvLopHoc = new DataGridView();
-            btnDauTrang = new Button();
-            btnTrangTruoc = new Button();
-            lblTrang = new Label();
-            btnTrangSau = new Button();
-            btnCuoiTrang = new Button();
+            panelLeft = new System.Windows.Forms.Panel();
+            lblThongTin = new System.Windows.Forms.Label();
+            lblMaID = new System.Windows.Forms.Label();
+            txtMaID = new System.Windows.Forms.TextBox();
+            lblMaLop = new System.Windows.Forms.Label();
+            txtMaLop = new System.Windows.Forms.TextBox();
+            lblTenLop = new System.Windows.Forms.Label();
+            txtTenLop = new System.Windows.Forms.TextBox();
+            lblGhiChu = new System.Windows.Forms.Label();
+            txtGhiChu = new System.Windows.Forms.TextBox();
+            btnThem = new System.Windows.Forms.Button();
+            btnSua = new System.Windows.Forms.Button();
+            btnXoa = new System.Windows.Forms.Button();
+            btnLamMoi = new System.Windows.Forms.Button();
+            btnXemDS = new System.Windows.Forms.Button();
+            panelRight = new System.Windows.Forms.Panel();
+            lblTimKiem = new System.Windows.Forms.Label();
+            txtTimKiem = new System.Windows.Forms.TextBox();
+            btnTim = new System.Windows.Forms.Button();
+            dgvLopHoc = new System.Windows.Forms.DataGridView();
+            btnDauTrang = new System.Windows.Forms.Button();
+            btnTrangTruoc = new System.Windows.Forms.Button();
+            lblTrang = new System.Windows.Forms.Label();
+            btnTrangSau = new System.Windows.Forms.Button();
+            btnCuoiTrang = new System.Windows.Forms.Button();
+
             panelLeft.SuspendLayout();
             panelRight.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)dgvLopHoc).BeginInit();
             SuspendLayout();
-            // 
-            // panelLeft
-            // 
-            panelLeft.BackColor = Color.FromArgb(236, 240, 241);
-            panelLeft.Controls.Add(lblThongTin);
-            panelLeft.Controls.Add(lblMaID);
-            panelLeft.Controls.Add(txtMaID);
-            panelLeft.Controls.Add(lblMaLop);
-            panelLeft.Controls.Add(txtMaLop);
-            panelLeft.Controls.Add(lblTenLop);
-            panelLeft.Controls.Add(txtTenLop);
-            panelLeft.Controls.Add(lblGhiChu);
-            panelLeft.Controls.Add(txtGhiChu);
-            panelLeft.Controls.Add(btnThem);
-            panelLeft.Controls.Add(btnSua);
-            panelLeft.Controls.Add(btnXoa);
-            panelLeft.Controls.Add(btnLamMoi);
-            panelLeft.Controls.Add(btnXemDS);
-            panelLeft.Dock = DockStyle.Left;
-            panelLeft.Location = new Point(0, 0);
-            panelLeft.Name = "panelLeft";
-            panelLeft.Size = new Size(394, 818);
-            panelLeft.TabIndex = 0;
-            // 
+
+            // ── panelLeft ──────────────────────────────────────────
+            panelLeft.BackColor = System.Drawing.Color.FromArgb(245, 245, 245);
+            panelLeft.Controls.AddRange(new System.Windows.Forms.Control[] {
+                lblThongTin, lblMaID, txtMaID, lblMaLop, txtMaLop,
+                lblTenLop, txtTenLop, lblGhiChu, txtGhiChu,
+                btnThem, btnSua, btnXoa, btnLamMoi, btnXemDS
+            });
+            panelLeft.Dock = System.Windows.Forms.DockStyle.Left;
+            panelLeft.Size = new System.Drawing.Size(430, 660);
+
             // lblThongTin
-            // 
-            lblThongTin.AutoSize = true;
-            lblThongTin.Font = new Font("Segoe UI", 13.8F, FontStyle.Bold);
-            lblThongTin.ForeColor = Color.FromArgb(44, 62, 80);
-            lblThongTin.Location = new Point(25, 30);
-            lblThongTin.Name = "lblThongTin";
-            lblThongTin.Size = new Size(262, 31);
-            lblThongTin.TabIndex = 0;
             lblThongTin.Text = "THÔNG TIN LỚP HỌC";
-            // 
-            // lblMaID
-            // 
-            lblMaID.AutoSize = true;
-            lblMaID.Font = new Font("Segoe UI", 10F, FontStyle.Bold);
-            lblMaID.Location = new Point(25, 90);
-            lblMaID.Name = "lblMaID";
-            lblMaID.Size = new Size(61, 23);
-            lblMaID.TabIndex = 1;
-            lblMaID.Text = "Mã ID:";
-            // 
-            // txtMaID
-            // 
-            txtMaID.Font = new Font("Segoe UI", 10.8F);
-            txtMaID.Location = new Point(25, 120);
-            txtMaID.Name = "txtMaID";
-            txtMaID.Size = new Size(340, 31);
-            txtMaID.TabIndex = 2;
-            // 
-            // lblMaLop
-            // 
-            lblMaLop.AutoSize = true;
-            lblMaLop.Font = new Font("Segoe UI", 10F, FontStyle.Bold);
-            lblMaLop.Location = new Point(25, 170);
-            lblMaLop.Name = "lblMaLop";
-            lblMaLop.Size = new Size(71, 23);
-            lblMaLop.TabIndex = 3;
-            lblMaLop.Text = "Mã lớp:";
-            // 
-            // txtMaLop
-            // 
-            txtMaLop.Font = new Font("Segoe UI", 10.8F);
-            txtMaLop.Location = new Point(25, 200);
-            txtMaLop.Name = "txtMaLop";
-            txtMaLop.Size = new Size(340, 31);
-            txtMaLop.TabIndex = 4;
-            // 
-            // lblTenLop
-            // 
-            lblTenLop.AutoSize = true;
-            lblTenLop.Font = new Font("Segoe UI", 10F, FontStyle.Bold);
-            lblTenLop.Location = new Point(25, 250);
-            lblTenLop.Name = "lblTenLop";
-            lblTenLop.Size = new Size(73, 23);
-            lblTenLop.TabIndex = 5;
-            lblTenLop.Text = "Tên lớp:";
-            // 
-            // txtTenLop
-            // 
-            txtTenLop.Font = new Font("Segoe UI", 10.8F);
-            txtTenLop.Location = new Point(25, 280);
-            txtTenLop.Name = "txtTenLop";
-            txtTenLop.Size = new Size(340, 31);
-            txtTenLop.TabIndex = 6;
-            // 
-            // lblGhiChu
-            // 
-            lblGhiChu.AutoSize = true;
-            lblGhiChu.Font = new Font("Segoe UI", 10F, FontStyle.Bold);
-            lblGhiChu.Location = new Point(25, 330);
-            lblGhiChu.Name = "lblGhiChu";
-            lblGhiChu.Size = new Size(75, 23);
-            lblGhiChu.TabIndex = 7;
-            lblGhiChu.Text = "Ghi chú:";
-            // 
-            // txtGhiChu
-            // 
-            txtGhiChu.Font = new Font("Segoe UI", 10.8F);
-            txtGhiChu.Location = new Point(25, 360);
-            txtGhiChu.Name = "txtGhiChu";
-            txtGhiChu.Size = new Size(340, 31);
-            txtGhiChu.TabIndex = 8;
-            // 
-            // btnThem
-            // 
-            btnThem.BackColor = Color.FromArgb(52, 152, 219);
-            btnThem.FlatStyle = FlatStyle.Flat;
-            btnThem.Font = new Font("Segoe UI", 10F, FontStyle.Bold);
-            btnThem.ForeColor = Color.White;
-            btnThem.Location = new Point(25, 430);
-            btnThem.Name = "btnThem";
-            btnThem.Size = new Size(160, 45);
-            btnThem.TabIndex = 9;
-            btnThem.Text = "Thêm";
-            btnThem.UseVisualStyleBackColor = false;
-            btnThem.Click += btnThem_Click;
-            // 
-            // btnSua
-            // 
-            btnSua.BackColor = Color.FromArgb(46, 204, 113);
-            btnSua.FlatStyle = FlatStyle.Flat;
-            btnSua.Font = new Font("Segoe UI", 10F, FontStyle.Bold);
-            btnSua.ForeColor = Color.White;
-            btnSua.Location = new Point(205, 430);
-            btnSua.Name = "btnSua";
-            btnSua.Size = new Size(160, 45);
-            btnSua.TabIndex = 10;
-            btnSua.Text = "Sửa";
-            btnSua.UseVisualStyleBackColor = false;
-            btnSua.Click += btnSua_Click;
-            // 
-            // btnXoa
-            // 
-            btnXoa.BackColor = Color.FromArgb(231, 76, 60);
-            btnXoa.FlatStyle = FlatStyle.Flat;
-            btnXoa.Font = new Font("Segoe UI", 10F, FontStyle.Bold);
-            btnXoa.ForeColor = Color.White;
-            btnXoa.Location = new Point(25, 490);
-            btnXoa.Name = "btnXoa";
-            btnXoa.Size = new Size(160, 45);
-            btnXoa.TabIndex = 11;
-            btnXoa.Text = "Xóa";
-            btnXoa.UseVisualStyleBackColor = false;
-            btnXoa.Click += btnXoa_Click;
-            // 
-            // btnLamMoi
-            // 
-            btnLamMoi.BackColor = Color.FromArgb(149, 165, 166);
-            btnLamMoi.FlatStyle = FlatStyle.Flat;
-            btnLamMoi.Font = new Font("Segoe UI", 10F, FontStyle.Bold);
-            btnLamMoi.ForeColor = Color.White;
-            btnLamMoi.Location = new Point(205, 490);
-            btnLamMoi.Name = "btnLamMoi";
-            btnLamMoi.Size = new Size(160, 45);
-            btnLamMoi.TabIndex = 12;
-            btnLamMoi.Text = "Làm mới";
-            btnLamMoi.UseVisualStyleBackColor = false;
-            btnLamMoi.Click += btnLamMoi_Click;
-            // 
-            // btnXemDS
-            // 
-            btnXemDS.BackColor = Color.FromArgb(52, 73, 94);
-            btnXemDS.FlatStyle = FlatStyle.Flat;
-            btnXemDS.Font = new Font("Segoe UI", 10F, FontStyle.Bold);
-            btnXemDS.ForeColor = Color.White;
-            btnXemDS.Location = new Point(25, 555);
-            btnXemDS.Name = "btnXemDS";
-            btnXemDS.Size = new Size(340, 48);
-            btnXemDS.TabIndex = 13;
+            lblThongTin.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Bold);
+            lblThongTin.Location = new System.Drawing.Point(20, 18);
+            lblThongTin.AutoSize = true;
+
+            // Mã ID
+            SetLbl(lblMaID, "Mã ID:", new System.Drawing.Point(20, 60));
+            SetTxt(txtMaID, new System.Drawing.Point(20, 80), 385);
+            txtMaID.ReadOnly = true;
+            txtMaID.BackColor = System.Drawing.Color.FromArgb(235, 235, 235);
+
+            // Mã lớp
+            SetLbl(lblMaLop, "Mã lớp:", new System.Drawing.Point(20, 120));
+            SetTxt(txtMaLop, new System.Drawing.Point(20, 140), 385);
+
+            // Tên lớp
+            SetLbl(lblTenLop, "Tên lớp:", new System.Drawing.Point(20, 180));
+            SetTxt(txtTenLop, new System.Drawing.Point(20, 200), 385);
+
+            // Ghi chú (dùng làm Niên khóa)
+            SetLbl(lblGhiChu, "Niên khóa / Ghi chú:", new System.Drawing.Point(20, 240));
+            txtGhiChu.Font = new System.Drawing.Font("Segoe UI", 9.5F);
+            txtGhiChu.Location = new System.Drawing.Point(20, 260);
+            txtGhiChu.Multiline = true;
+            txtGhiChu.Size = new System.Drawing.Size(385, 60);
+            txtGhiChu.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+
+            // Buttons
+            MakeBtn(btnThem, "Thêm", new System.Drawing.Point(20, 350), System.Drawing.Color.FromArgb(0, 188, 212));
+            MakeBtn(btnSua, "Sửa", new System.Drawing.Point(215, 350), System.Drawing.Color.FromArgb(76, 175, 80));
+            MakeBtn(btnXoa, "Xóa", new System.Drawing.Point(20, 415), System.Drawing.Color.FromArgb(244, 67, 54));
+            MakeBtn(btnLamMoi, "Làm mới", new System.Drawing.Point(215, 415), System.Drawing.Color.FromArgb(158, 158, 158));
+
             btnXemDS.Text = "Xem danh sách sinh viên";
-            btnXemDS.UseVisualStyleBackColor = false;
-            btnXemDS.Click += btnXemDS_Click;
-            // 
-            // panelRight
-            // 
-            panelRight.BackColor = Color.White;
-            panelRight.Controls.Add(lblTimKiem);
-            panelRight.Controls.Add(txtTimKiem);
-            panelRight.Controls.Add(btnTim);
-            panelRight.Controls.Add(dgvLopHoc);
-            panelRight.Controls.Add(btnDauTrang);
-            panelRight.Controls.Add(btnTrangTruoc);
-            panelRight.Controls.Add(lblTrang);
-            panelRight.Controls.Add(btnTrangSau);
-            panelRight.Controls.Add(btnCuoiTrang);
-            panelRight.Dock = DockStyle.Fill;
-            panelRight.Location = new Point(394, 0);
-            panelRight.Name = "panelRight";
-            panelRight.Padding = new Padding(20);
-            panelRight.Size = new Size(910, 818);
-            panelRight.TabIndex = 1;
-            // 
-            // lblTimKiem
-            // 
+            btnXemDS.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
+            btnXemDS.Size = new System.Drawing.Size(385, 48);
+            btnXemDS.Location = new System.Drawing.Point(20, 480);
+            btnXemDS.BackColor = System.Drawing.Color.FromArgb(33, 150, 243);
+            btnXemDS.ForeColor = System.Drawing.Color.White;
+            btnXemDS.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            btnXemDS.FlatAppearance.BorderSize = 0;
+
+            btnThem.Click += new System.EventHandler(btnThem_Click);
+            btnSua.Click += new System.EventHandler(btnSua_Click);
+            btnXoa.Click += new System.EventHandler(btnXoa_Click);
+            btnLamMoi.Click += new System.EventHandler(btnLamMoi_Click);
+            btnXemDS.Click += new System.EventHandler(btnXemDS_Click);
+
+            // ── panelRight ─────────────────────────────────────────
+            panelRight.Dock = System.Windows.Forms.DockStyle.Fill;
+            panelRight.Controls.AddRange(new System.Windows.Forms.Control[] {
+                lblTimKiem, txtTimKiem, btnTim, dgvLopHoc,
+                btnDauTrang, btnTrangTruoc, lblTrang, btnTrangSau, btnCuoiTrang
+            });
+
+            // Tìm kiếm
+            lblTimKiem.Text = "Tìm kiếm (Mã ID / Mã lớp / Tên lớp):";
+            lblTimKiem.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
+            lblTimKiem.Location = new System.Drawing.Point(15, 18);
             lblTimKiem.AutoSize = true;
-            lblTimKiem.Font = new Font("Segoe UI", 10F, FontStyle.Bold);
-            lblTimKiem.Location = new Point(23, 30);
-            lblTimKiem.Name = "lblTimKiem";
-            lblTimKiem.Size = new Size(299, 23);
-            lblTimKiem.TabIndex = 0;
-            lblTimKiem.Text = "Tìm kiếm (Mã ID / Mã lớp / Tên lớp)";
-            // 
-            // txtTimKiem
-            // 
-            txtTimKiem.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
-            txtTimKiem.Font = new Font("Segoe UI", 11F);
-            txtTimKiem.Location = new Point(23, 60);
-            txtTimKiem.Name = "txtTimKiem";
-            txtTimKiem.Size = new Size(734, 32);
-            txtTimKiem.TabIndex = 1;
-            // 
-            // btnTim
-            // 
-            btnTim.Anchor = AnchorStyles.Top | AnchorStyles.Right;
-            btnTim.BackColor = Color.FromArgb(44, 62, 80);
-            btnTim.FlatStyle = FlatStyle.Flat;
-            btnTim.Font = new Font("Segoe UI", 10F, FontStyle.Bold);
-            btnTim.ForeColor = Color.White;
-            btnTim.Location = new Point(773, 58);
-            btnTim.Name = "btnTim";
-            btnTim.Size = new Size(110, 35);
-            btnTim.TabIndex = 2;
-            btnTim.Text = "Tìm kiếm";
-            btnTim.UseVisualStyleBackColor = false;
-            btnTim.Click += btnTim_Click;
-            // 
-            // dgvLopHoc
-            // 
-            dgvLopHoc.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
-            dgvLopHoc.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
-            dgvLopHoc.BackgroundColor = Color.White;
-            dgvLopHoc.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dgvLopHoc.Location = new Point(23, 120);
-            dgvLopHoc.Name = "dgvLopHoc";
-            dgvLopHoc.RowHeadersWidth = 51;
-            dgvLopHoc.RowTemplate.Height = 24;
-            dgvLopHoc.Size = new Size(860, 598);
-            dgvLopHoc.TabIndex = 3;
-            // 
-            // btnDauTrang
-            // 
-            btnDauTrang.Anchor = AnchorStyles.Bottom | AnchorStyles.Left;
-            btnDauTrang.Font = new Font("Segoe UI", 9.5F, FontStyle.Bold);
-            btnDauTrang.Location = new Point(23, 743);
-            btnDauTrang.Name = "btnDauTrang";
-            btnDauTrang.Size = new Size(55, 40);
-            btnDauTrang.TabIndex = 4;
-            btnDauTrang.Text = "<<";
-            btnDauTrang.UseVisualStyleBackColor = true;
-            btnDauTrang.Click += btnFirst_Click;
-            // 
-            // btnTrangTruoc
-            // 
-            btnTrangTruoc.Anchor = AnchorStyles.Bottom | AnchorStyles.Left;
-            btnTrangTruoc.Font = new Font("Segoe UI", 9.5F, FontStyle.Bold);
-            btnTrangTruoc.Location = new Point(84, 743);
-            btnTrangTruoc.Name = "btnTrangTruoc";
-            btnTrangTruoc.Size = new Size(55, 40);
-            btnTrangTruoc.TabIndex = 5;
-            btnTrangTruoc.Text = "<";
-            btnTrangTruoc.UseVisualStyleBackColor = true;
-            btnTrangTruoc.Click += btnPrev_Click;
-            // 
-            // lblTrang
-            // 
-            lblTrang.Anchor = AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
-            lblTrang.Font = new Font("Segoe UI", 10F);
-            lblTrang.Location = new Point(145, 743);
-            lblTrang.Name = "lblTrang";
-            lblTrang.Size = new Size(602, 40);
-            lblTrang.TabIndex = 6;
-            lblTrang.Text = "Trang 1 / 1";
-            lblTrang.TextAlign = ContentAlignment.MiddleCenter;
-            // 
-            // btnTrangSau
-            // 
-            btnTrangSau.Anchor = AnchorStyles.Bottom | AnchorStyles.Right;
-            btnTrangSau.Font = new Font("Segoe UI", 9.5F, FontStyle.Bold);
-            btnTrangSau.Location = new Point(753, 743);
-            btnTrangSau.Name = "btnTrangSau";
-            btnTrangSau.Size = new Size(55, 40);
-            btnTrangSau.TabIndex = 7;
-            btnTrangSau.Text = ">";
-            btnTrangSau.UseVisualStyleBackColor = true;
-            btnTrangSau.Click += btnNext_Click;
-            // 
-            // btnCuoiTrang
-            // 
-            btnCuoiTrang.Anchor = AnchorStyles.Bottom | AnchorStyles.Right;
-            btnCuoiTrang.Font = new Font("Segoe UI", 9.5F, FontStyle.Bold);
-            btnCuoiTrang.Location = new Point(814, 743);
-            btnCuoiTrang.Name = "btnCuoiTrang";
-            btnCuoiTrang.Size = new Size(55, 40);
-            btnCuoiTrang.TabIndex = 8;
-            btnCuoiTrang.Text = ">>";
-            btnCuoiTrang.UseVisualStyleBackColor = true;
-            btnCuoiTrang.Click += btnLast_Click;
-            // 
-            // UC_QLLH
-            // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
-            AutoScaleMode = AutoScaleMode.Font;
+
+            txtTimKiem.Font = new System.Drawing.Font("Segoe UI", 9.5F);
+            txtTimKiem.Location = new System.Drawing.Point(15, 45);
+            txtTimKiem.Size = new System.Drawing.Size(550, 27);
+
+            btnTim.Text = "Tìm";
+            btnTim.Font = new System.Drawing.Font("Segoe UI", 9.5F, System.Drawing.FontStyle.Bold);
+            btnTim.Size = new System.Drawing.Size(90, 29);
+            btnTim.Location = new System.Drawing.Point(580, 43);
+            btnTim.BackColor = System.Drawing.Color.FromArgb(100, 100, 100);
+            btnTim.ForeColor = System.Drawing.Color.White;
+            btnTim.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            btnTim.FlatAppearance.BorderSize = 0;
+            btnTim.Click += new System.EventHandler(btnTim_Click);
+
+            // DataGridView
+            dgvLopHoc.Location = new System.Drawing.Point(15, 90);
+            dgvLopHoc.Size = new System.Drawing.Size(810, 530);
+            dgvLopHoc.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            dgvLopHoc.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dgvLopHoc.ReadOnly = true;
+            dgvLopHoc.AllowUserToAddRows = false;
+            dgvLopHoc.RowHeadersVisible = false;
+            dgvLopHoc.BackgroundColor = System.Drawing.Color.White;
+            dgvLopHoc.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            dgvLopHoc.Font = new System.Drawing.Font("Segoe UI", 9.5F);
+            dgvLopHoc.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            dgvLopHoc.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(dgvLopHoc_CellClick);
+
+            // Phân trang
+            MakePagingBtn(btnDauTrang, "<<", new System.Drawing.Point(200, 635));
+            MakePagingBtn(btnTrangTruoc, "<", new System.Drawing.Point(265, 635));
+            MakePagingBtn(btnTrangSau, ">", new System.Drawing.Point(530, 635));
+            MakePagingBtn(btnCuoiTrang, ">>", new System.Drawing.Point(595, 635));
+
+            lblTrang.Text = "Trang 1/1  |  0 bản ghi";
+            lblTrang.Font = new System.Drawing.Font("Segoe UI", 9F);
+            lblTrang.Location = new System.Drawing.Point(335, 640);
+            lblTrang.AutoSize = true;
+
+            btnDauTrang.Click += new System.EventHandler(btnDauTrang_Click);
+            btnTrangTruoc.Click += new System.EventHandler(btnTrangTruoc_Click);
+            btnTrangSau.Click += new System.EventHandler(btnTrangSau_Click);
+            btnCuoiTrang.Click += new System.EventHandler(btnCuoiTrang_Click);
+
+            // ── UserControl ────────────────────────────────────────
+            AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
+            AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            Size = new System.Drawing.Size(1280, 680);
             Controls.Add(panelRight);
             Controls.Add(panelLeft);
-            Name = "UC_QLLH";
-            Size = new Size(1304, 818);
+            Load += new System.EventHandler(UC_QLLH_Load);
+
             panelLeft.ResumeLayout(false);
             panelLeft.PerformLayout();
             panelRight.ResumeLayout(false);
             panelRight.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)dgvLopHoc).EndInit();
             ResumeLayout(false);
+        }
+
+        private void SetLbl(System.Windows.Forms.Label lbl, string text, System.Drawing.Point loc)
+        {
+            lbl.Text = text;
+            lbl.Font = new System.Drawing.Font("Segoe UI", 9.5F);
+            lbl.Location = loc;
+            lbl.AutoSize = true;
+        }
+
+        private void SetTxt(System.Windows.Forms.TextBox txt, System.Drawing.Point loc, int width)
+        {
+            txt.Font = new System.Drawing.Font("Segoe UI", 9.5F);
+            txt.Location = loc;
+            txt.Size = new System.Drawing.Size(width, 27);
+            txt.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+        }
+
+        private void MakeBtn(System.Windows.Forms.Button btn, string text, System.Drawing.Point loc, System.Drawing.Color color)
+        {
+            btn.Text = text;
+            btn.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
+            btn.Size = new System.Drawing.Size(175, 48);
+            btn.Location = loc;
+            btn.BackColor = color;
+            btn.ForeColor = System.Drawing.Color.White;
+            btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            btn.FlatAppearance.BorderSize = 0;
+        }
+
+        private void MakePagingBtn(System.Windows.Forms.Button btn, string text, System.Drawing.Point loc)
+        {
+            btn.Text = text;
+            btn.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
+            btn.Size = new System.Drawing.Size(55, 32);
+            btn.Location = loc;
+            btn.BackColor = System.Drawing.Color.FromArgb(220, 220, 220);
+            btn.ForeColor = System.Drawing.Color.Black;
+            btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            btn.FlatAppearance.BorderSize = 0;
         }
 
         #endregion
@@ -381,13 +234,11 @@
         private System.Windows.Forms.Button btnXoa;
         private System.Windows.Forms.Button btnLamMoi;
         private System.Windows.Forms.Button btnXemDS;
-
         private System.Windows.Forms.Panel panelRight;
         private System.Windows.Forms.Label lblTimKiem;
         private System.Windows.Forms.TextBox txtTimKiem;
         private System.Windows.Forms.Button btnTim;
         private System.Windows.Forms.DataGridView dgvLopHoc;
-
         private System.Windows.Forms.Button btnDauTrang;
         private System.Windows.Forms.Button btnTrangTruoc;
         private System.Windows.Forms.Label lblTrang;

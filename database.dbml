@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="QLSV" Class="databaseDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=LAPTOP-SGPK0VHD\SQLEXPRESS;Initial Catalog=QLSV;Integrated Security=True;Trust Server Certificate=True" SettingsObjectName="CSharp_68PM1_NguyenHoangTung_0027968.Properties.Settings" SettingsPropertyName="QLSVConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.lophoc" Member="lophocs">
+    <Type Name="lophoc">
+      <Column Name="MaLop" Type="System.String" DbType="NVarChar(20) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="TenLop" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="NienKhoa" Type="System.String" DbType="NVarChar(20)" CanBeNull="true" />
+      <Association Name="lophoc_tbl_sinhvien" Member="tbl_sinhviens" ThisKey="MaLop" OtherKey="MaLop" Type="tbl_sinhvien" />
+    </Type>
+  </Table>
+  <Table Name="dbo.tbl_sinhvien" Member="tbl_sinhviens">
+    <Type Name="tbl_sinhvien">
+      <Column Name="MaSV" Type="System.String" DbType="NVarChar(20) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="HoTen" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="NgaySinh" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Column Name="GioiTinh" Type="System.String" DbType="NVarChar(10)" CanBeNull="true" />
+      <Column Name="QueQuan" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="SoDienThoai" Type="System.String" DbType="VarChar(15)" CanBeNull="true" />
+      <Column Name="MaLop" Type="System.String" DbType="NVarChar(20)" CanBeNull="true" />
+      <Association Name="lophoc_tbl_sinhvien" Member="lophoc" ThisKey="MaLop" OtherKey="MaLop" Type="lophoc" IsForeignKey="true" />
+    </Type>
+  </Table>
+</Database>
